@@ -1,0 +1,101 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+  font-family:Inter,sans-serif;
+  color:#2b2b2b;
+  background:
+    linear-gradient(rgba(245,240,230,.9),rgba(245,240,230,.95)),
+    url("https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=1600&auto=format&fit=crop")
+    center/cover fixed no-repeat;
+}
+
+/* NAVBAR */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:rgba(240,230,215,.95);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 40px;
+  z-index:100;
+}
+
+.navbar ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+
+.navbar a{
+  text-decoration:none;
+  color:#3b3125;
+  font-size:14px;
+}
+
+.logo{
+  font-family:"Playfair Display",serif;
+  font-weight:700;
+}
+
+/* HERO */
+.hero{
+  height:80vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-family:"Playfair Display",serif;
+  font-size:72px;
+}
+
+/* SECTIONS */
+.content{
+  max-width:1200px;
+  margin:auto;
+  padding:100px 20px;
+}
+
+.section{
+  display:flex;
+  gap:40px;
+  margin-bottom:100px;
+  align-items:center;
+}
+
+.section.reverse{
+  flex-direction:row-reverse;
+}
+
+.section img{
+  width:45%;
+  border-radius:12px;
+}
+
+.section .text{
+  width:55%;
+}
+
+.section h2{
+  font-family:"Playfair Display",serif;
+  margin-bottom:16px;
+}
+
+.section p, blockquote{
+  line-height:1.9;
+  font-size:16px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  opacity:.6;
+}
+
